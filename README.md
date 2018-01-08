@@ -3,6 +3,15 @@
 
 Here below you will find a brief description of MUSCLEMOTION. Further details can be found on the original publication on [*Circulation Research*](http://circres.ahajournals.org/content/early/2017/12/26/CIRCRESAHA.117.312067).
 
+### What is it?
+MUSCLEMOTION is a powerful and versatile ImageJ macro to measure in vitro or in 
+vivo contraction or similar motion. Originally designed for quantifying 2D stem 
+cell derived cardiomyocyte contraction, it proved applicable to many different
+cell types, systems and experimental setups. Developed in collaboration between 
+the Leiden University Medical Center and Glasgow University by a combination of 
+basic scientists, engineers and medical doctors, we aim to provide a simple software tool to quantify contraction without the need for detailed knowledge of software or expensive 
+equipment. Easy to use for anybody with a microscope and camera. 
+
 ### Abstract
 
 **Rationale:** There are several methods to measure cardiomyocyte (CM) and muscle contraction but these require customized hardware, expensive apparatus and advanced informatics or can only be used in single experimental models. Consequently, data and techniques have been difficult to reproduce across models and laboratories, analysis is time consuming and only specialist researchers can quantify data.
