@@ -1,7 +1,7 @@
 # MUSCLEMOTION
 ## Open-source ImageJ plugin to quantify cardiomyocyte and cardiac muscle contraction in vitro and in vivo
 
-Here below you will find a brief description of MUSCLEMOTION. Further details can be found on the original publication on *Circulation Research*.
+Here below you will find a brief description of MUSCLEMOTION. Further details can be found on the original publication on ![*Circulation Research](http://circres.ahajournals.org/content/early/2017/12/26/CIRCRESAHA.117.312067).
 
 ### Abstract
 
