@@ -15,4 +15,6 @@ Here below you will find a brief description of MUSCLEMOTION. Further details ca
 
 
 ### How to cite
-If you use MUSCLEMOTION in your publication, please cite it as: **Sala L. & van Meer B.J. et al.**, MUSCLEMOTION: A Versatile Open Software Tool to Quantify Cardiomyocyte and Cardiac Muscle Contraction In Vitro and In Vivo, *Circulation Research*, 2017, doi: 10.1161/CIRCRESAHA.117.312067. 
+If you use MUSCLEMOTION in your publication, please cite it as: 
+
+**Sala L. & van Meer B.J. et al.**, MUSCLEMOTION: A Versatile Open Software Tool to Quantify Cardiomyocyte and Cardiac Muscle Contraction In Vitro and In Vivo, *Circulation Research*, 2017, doi: 10.1161/CIRCRESAHA.117.312067. 
