@@ -22,6 +22,8 @@ equipment. Easy to use for anybody with a microscope and camera.
 
 **Conclusions:** Using a single open source method for processing video recordings, we obtained reliable pharmacological data and measures of cardiac disease phenotype in experimental cell-, animal- and human models.
 
+### Usage
+MUSCLEMOTION is written as an ImageJ macro and can best be used with the latest release of ImageJ. No additional libraries are required. Please do refer to the User Manual before the first analysis.
 
 ### How to cite
 If you use MUSCLEMOTION in your publication, please cite it as: 
