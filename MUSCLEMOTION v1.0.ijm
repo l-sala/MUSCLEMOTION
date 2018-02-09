@@ -5,6 +5,7 @@
 macro "MUSCLEMOTION Action Tool - C1422444T0c10MTac10M;" {
 	//STATIC PARAMETERS
 	showStatus("Initialization...");
+	run("Input/Output...", "jpeg=100");
 	var versionNumber="1.0";
 	var referenceFrameSlice=1;			//if nothing is set somehow, the reference frame will be set to 1
 	var hideIntermediateResults=true;
@@ -525,7 +526,6 @@ macro "MUSCLEMOTION Action Tool - C1422444T0c10MTac10M;" {
 		//Calculate contraction
 		lfhMeanArray=getContractionData();
 		customPlotZaxis("Contraction", lfhMeanArray);
-		saveAs("Jpeg", savePath+File.separator+"Contraction.jpg");
 		//saving data
 		contractionFile=getFileName("contraction");
 		writeFile(contractionFile);
@@ -533,7 +533,6 @@ macro "MUSCLEMOTION Action Tool - C1422444T0c10MTac10M;" {
 		//calculate speed of contraction
 		lfhMeanArraySpeed=getSpeedData();
 		customPlotZaxis("Speed of contraction", lfhMeanArraySpeed);
-		saveAs("Jpeg", savePath+File.separator+"Speed of contraction.jpg");
 		//saving data
 		speedFile=getFileName("speed-of-contraction");
 		writeFile(speedFile);
@@ -791,11 +790,18 @@ function customPlotZaxis(parameter, yArrayMean) {
 	}
 	Plot.setColor("black");
 	Plot.show();
-	rename(parameter+"-profile");
+	rename(parameter+"-profileData");
 	if(hideIntermediateResults==true){
 		setBatchMode(false);
 		setBatchMode(true);
 	}
+	Plot.makeHighResolution(parameter+"-profile",4.0);
+	saveAs("Jpeg", savePath+File.separator+parameter);
+	if(hideIntermediateResults==true){
+		setBatchMode(false);
+		setBatchMode(true);
+	}
+	selectWindow(parameter+"-profileData");
 
 	
 	
@@ -969,17 +975,20 @@ function speedLinCompare(speedY, contractionY) {
 	}
 	
 	//create plot for visual inspection
-	Plot.create("Comparison calculated (red) and measured (black) speed", "Time (ms)", "Normalized contraction speed (a.u.)", xTimeArray, measuredSpeedNorm);
+	Plot.create("Comparison calculated (red) and measured (black) speed-lowRes", "Time (ms)", "Normalized contraction speed (a.u.)", xTimeArray, measuredSpeedNorm);
 	Plot.setColor("red");
 	Plot.add("line", xTimeArray, calculatedSpeedNorm);
 	Plot.setColor("black");
 	Plot.show();
+	Plot.makeHighResolution("Comparison calculated (red) and measured (black) speed",4.0);
 	saveAs("Jpeg", savePath+File.separator+"Comparison calculated (red) and measured (black) speed.jpg");
-
+	
 	if(hideIntermediateResults==true){
 		setBatchMode(false);
 		setBatchMode(true);
 	}
+	
+
 
 }
 
