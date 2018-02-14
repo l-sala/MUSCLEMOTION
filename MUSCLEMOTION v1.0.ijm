@@ -88,8 +88,8 @@ macro "MUSCLEMOTION Action Tool - C1422444T0c10MTac10M;" {
 							
 	//Dialog #1
 	Dialog.create("Analysis parameter wizard");
-	Dialog.addRadioButtonGroup(" A. Do you want to analyze a directory with multiple TIFFs or subdirectories (batch)?\n", simpleAnswers, 0, 2, batchAnalysis);
-	Dialog.addRadioButtonGroup(" B. Do you want to analyze an TIFF image sequence instead of a stack?\n", simpleAnswers, 0, 2, tiffImSequence);
+	Dialog.addRadioButtonGroup(" A. Do you want to analyze a directory containing multiple TIFFs or subdirectories (batch)?\n", simpleAnswers, 0, 2, batchAnalysis);
+	Dialog.addRadioButtonGroup(" B. Do you want to analyze a TIFF image sequence instead of a stack?\n", simpleAnswers, 0, 2, tiffImSequence);
 	Dialog.addRadioButtonGroup(" C. Do you want to add a Gaussian blur to cancel out repetitive patterns?\n", simpleAnswers, 0, 2, guassianBlur10);
 	Dialog.addMessage("D. What is the frame rate of your recording(s)?");
 	Dialog.addNumber("   ", recordedFramerate, 0, 5, "frames/second");
