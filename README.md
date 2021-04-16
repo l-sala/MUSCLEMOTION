@@ -3,6 +3,8 @@
 
 Here below you will find a brief description of MUSCLEMOTION. Further details can be found on the original publication on [*Circulation Research*](http://circres.ahajournals.org/content/early/2017/12/26/CIRCRESAHA.117.312067).
 
+A detailed step-by-step protocol description can be found on the protocol paper on [*Current Protocols in Human Genetics*](https://currentprotocols.onlinelibrary.wiley.com/doi/abs/10.1002/cphg.67)
+
 ### What is it?
 MUSCLEMOTION is a powerful and versatile ImageJ macro to measure in vitro or in 
 vivo contraction or similar motion. Originally designed for quantifying 2D stem 
@@ -29,6 +31,8 @@ MUSCLEMOTION is written as an ImageJ macro and can best be used with the latest 
 If you use MUSCLEMOTION in your publication, please cite it as: 
 
 **Sala L. & van Meer B.J. et al.**, MUSCLEMOTION: A Versatile Open Software Tool to Quantify Cardiomyocyte and Cardiac Muscle Contraction In Vitro and In Vivo, *Circulation Research*, 2017, doi: 10.1161/CIRCRESAHA.117.312067. 
+
+**van Meer B.J. & Sala L. et al.**, Quantification of Muscle Contraction In Vitro and In Vivo Using MUSCLEMOTION Software: From Stem Cell‐Derived Cardiomyocytes to Zebrafish and Human Hearts, *Current Protocols in Human Genetics*, 2018, doi: 10.1002/cphg.67.
 
 ---
 
